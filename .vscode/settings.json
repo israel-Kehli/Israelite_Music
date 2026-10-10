@@ -3,6 +3,7 @@
         "/^Set-Location 'C:\\\\Users\\\\USER\\\\Documents\\\\web design\\\\ISRAEL_TECH\\\\Israelite_Music\\\\client'; npm i$/": {
             "approve": true,
             "matchCommandLine": true
-        }
+        },
+        "npm run dev": true
     }
 }

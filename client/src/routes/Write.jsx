@@ -13,7 +13,7 @@ const fetchGenres = async () => {
   return res.data;
 };
 
-const Upload = () => {
+const Write = () => {
   const { isLoaded, isSignedIn, user } = useUser();
   const isAdmin = user?.publicMetadata?.role === "admin";
   const [value, setValue] = useState("");
@@ -177,5 +177,4 @@ const Upload = () => {
   );
 };
 
-export default Upload;
-
+export default Write;
