@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="grid gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Israelite Music" className="w-9 h-9 rounded-lg" />
+            <img src="/logo.png" alt="Israelite Music" className="w-12 h-12 rounded-lg" />
             <h3 className="font-semibold text-slate-900 dark:text-slate-100">
               Israelite Music
             </h3>

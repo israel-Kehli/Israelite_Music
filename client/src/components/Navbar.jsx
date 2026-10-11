@@ -41,7 +41,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="Israelite Music Logo"
-              className="w-8 h-8 rounded-lg"
+              className="w-10 h-10 rounded-lg"
             />
             <span>Israelite Music</span>
           </div>
@@ -145,7 +145,11 @@ const Navbar = () => {
     <>
       <header className="w-full h-16 md:h-20 flex items-center justify-between sticky top-0 z-40 backdrop-blur-md bg-white/75 dark:bg-slate-950/70 border-b border-slate-200/60 dark:border-slate-800">
         <Link to="/" className="flex items-center gap-3 text-lg md:text-xl font-bold tracking-tight">
-          <img src="/logo.png" alt="Israelite Music Logo" className="w-8 h-8 rounded-lg" />
+          <img
+            src="/logo.png"
+            alt="Israelite Music Logo"
+            className="w-10 h-10 md:w-14 md:h-14 rounded-lg"
+          />
           <span className="text-slate-900 dark:text-slate-100">Israelite Music</span>
         </Link>
 

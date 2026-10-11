@@ -7,7 +7,7 @@ const LoadingModal = ({ open }) => {
         <img
           src="/logo.png"
           alt="Israelite Music"
-          className="w-16 h-16 md:w-20 md:h-20 rounded-2xl shadow-card"
+          className="w-28 h-28 md:w-36 md:h-36 rounded-2xl shadow-card"
         />
         <p className="text-slate-700 dark:text-slate-200 font-medium">
           Loading Israelite Music...
