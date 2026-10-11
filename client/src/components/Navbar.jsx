@@ -34,7 +34,7 @@ const Navbar = () => {
         open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(59,130,246,0.15),_transparent_45%)] dark:bg-[radial-gradient(circle_at_top_right,_rgba(59,130,246,0.18),_transparent_45%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(217,154,11,0.15),_transparent_45%)] dark:bg-[radial-gradient(circle_at_top_right,_rgba(217,154,11,0.18),_transparent_45%)]" />
       <div className="relative min-h-[100dvh] w-full p-6 flex flex-col justify-between">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">

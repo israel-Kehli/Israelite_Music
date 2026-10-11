@@ -6,22 +6,23 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: "#eef5ff",
-          100: "#d8e6ff",
-          200: "#b3ccff",
-          300: "#8ab0ff",
-          500: "#4b7bff",
-          600: "#2f5fe6",
-          700: "#2548b8",
-          800: "#1f3a8a",
-          900: "#1b2f6b",
+          50: "#fff9eb",
+          100: "#fff0c2",
+          200: "#ffe08a",
+          300: "#ffd04d",
+          400: "#f2b824",
+          500: "#d99a0b",
+          600: "#b87b08",
+          700: "#8a5a00",
+          800: "#694400",
+          900: "#493000",
         },
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 10px 30px rgba(37, 72, 184, 0.12)",
+        soft: "0 10px 30px rgba(138, 90, 0, 0.14)",
         card: "0 8px 24px rgba(16, 24, 40, 0.08)",
       },
     },

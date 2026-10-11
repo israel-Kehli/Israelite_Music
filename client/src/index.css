@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: radial-gradient(1200px 600px at 10% -10%, #eef5ff 0%, #f6f8ff 35%, #ffffff 100%);
+  background: radial-gradient(1200px 600px at 10% -10%, #fff8e8 0%, #fffdf7 35%, #ffffff 100%);
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   color: #0f172a;
@@ -18,7 +18,7 @@ body,
 }
 
 html.dark body {
-  background: radial-gradient(1200px 600px at 10% -10%, #0f172a 0%, #0b1225 35%, #070b16 100%);
+  background: radial-gradient(1200px 600px at 10% -10%, #1c1912 0%, #110f0b 35%, #090909 100%);
   color: #e2e8f0;
 }
 
@@ -78,7 +78,7 @@ html.dark body {
 }
 
 ::selection {
-  background: #b3ccff;
+  background: #ffe08a;
   color: #0f172a;
 }
 
