@@ -11,7 +11,7 @@ const connectDB = async () => {
 
   if (!cached.promise) {
     cached.promise = mongoose
-      .connect(process.env.MONGO_URI, {
+      .connect(process.env.MONGODB_URI, {
         maxPoolSize: 10,
         serverSelectionTimeoutMS: 5000,
       })
