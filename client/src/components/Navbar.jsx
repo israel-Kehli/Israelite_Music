@@ -40,10 +40,10 @@ const Navbar = () => {
           <div className="flex items-center gap-3 text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">
             <img
               src="/logo.png"
-              alt="Israel Kehli Music Logo"
+              alt="Israelite Music Logo"
               className="w-8 h-8 rounded-lg"
             />
-            <span>Israel Kehli Music</span>
+            <span>Israelite Music</span>
           </div>
           <button
             className="h-10 w-10 rounded-xl border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-100 flex items-center justify-center bg-white/80 dark:bg-slate-900/70"
@@ -145,8 +145,8 @@ const Navbar = () => {
     <>
       <header className="w-full h-16 md:h-20 flex items-center justify-between sticky top-0 z-40 backdrop-blur-md bg-white/75 dark:bg-slate-950/70 border-b border-slate-200/60 dark:border-slate-800">
         <Link to="/" className="flex items-center gap-3 text-lg md:text-xl font-bold tracking-tight">
-          <img src="/logo.png" alt="Israel Kehli Music Logo" className="w-8 h-8 rounded-lg" />
-          <span className="text-slate-900 dark:text-slate-100">Israel Kehli Music</span>
+          <img src="/logo.png" alt="Israelite Music Logo" className="w-8 h-8 rounded-lg" />
+          <span className="text-slate-900 dark:text-slate-100">Israelite Music</span>
         </Link>
 
       <div className="hidden md:flex items-center gap-5 xl:gap-7 text-sm font-medium text-slate-700 dark:text-slate-200">

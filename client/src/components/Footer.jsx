@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="grid gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Israel Kehli Music" className="w-9 h-9 rounded-lg" />
+            <img src="/logo.png" alt="Israelite Music" className="w-9 h-9 rounded-lg" />
             <h3 className="font-semibold text-slate-900 dark:text-slate-100">
-              Israel Kehli Music
+              Israelite Music
             </h3>
           </div>
           <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="mt-8 text-xs text-slate-500 dark:text-slate-500">
-        © {new Date().getFullYear()} Israel Kehli Music. All rights reserved.
+        © {new Date().getFullYear()} Israelite Music. All rights reserved.
       </p>
     </footer>
   );

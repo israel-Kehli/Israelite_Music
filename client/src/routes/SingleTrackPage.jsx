@@ -31,10 +31,10 @@ const SingleTrackPage = () => {
     queryFn: fetchGenres,
   });
 
-  const pageTitle = data ? `${data.title} | Israel Kehli Music` : "Israel Kehli Music";
+  const pageTitle = data ? `${data.title} | Israelite Music` : "Israelite Music";
   const pageDescription = data?.desc
     ? data.desc
-    : "Israel Kehli Music track and release from the community.";
+    : "Israelite Music track and release from the community.";
   const pageUrl = data
     ? `https://israelitemusic.com.ng.ng/${data.slug}`
     : "https://israelitemusic.com.ng.ng";

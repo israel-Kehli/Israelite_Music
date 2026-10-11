@@ -22,11 +22,10 @@ const Homepage = () => {
         {/* titles */}
         <div className="max-w-2xl">
           <h1 className="text-slate-900 dark:text-slate-100 text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-         {/* Welcome To Israel Kehli Music */}
-         Israel Kehli Music
+         Israelite Music
           </h1>
           <p className="mt-6 text-md md:text-xl text-slate-600 dark:text-slate-300">
-            Discover inspiring music, artists, albums, and songs from the Israel Kehli Music community. <br/><br/>Music | Artists | Albums | Songs | Lyrics | New Releases
+            Discover inspiring music, artists, albums, and songs from the Israelite Music community. <br/><br/>Music | Artists | Albums | Songs | Lyrics | New Releases
             {/* Music connects people and stories across generations. */}
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -62,10 +61,10 @@ const Homepage = () => {
               />
               <text>
                 <textPath href="#circlePath" startOffset="0%">
-                  Israel Kehli Music -
+                  Israelite Music -
                 </textPath>
                 <textPath href="#circlePath" startOffset="50%">
-                  Israel Kehli Music -
+                  Israelite Music -
                 </textPath>
               </text>
             </svg>
@@ -99,10 +98,10 @@ const Homepage = () => {
               />
               <text>
                 <textPath href="#circlePath" startOffset="0%">
-                  Israel Kehli Music -
+                  Israelite Music -
                 </textPath>
                 <textPath href="#circlePath" startOffset="50%">
-                  Israel Kehli Music -
+                  Israelite Music -
                 </textPath>
               </text>
             </svg>
@@ -143,4 +142,3 @@ const Homepage = () => {
 };
 
 export default Homepage;
-
