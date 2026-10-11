@@ -11,6 +11,19 @@ const fetchTracks = async (pageParam, searchParams) => {
   const res = await axios.get(`${import.meta.env.VITE_API_URL}/posts`, {
     params: { page: pageParam, limit: 10, ...searchParamsObj },
   });
+
+  if (
+    !Array.isArray(res.data?.posts) ||
+    res.data.posts.some(
+      (track) =>
+        !track ||
+        typeof track !== "object" ||
+        typeof track._id !== "string"
+    )
+  ) {
+    throw new Error("The music service returned invalid track data.");
+  }
+
   return res.data;
 };
 
@@ -31,7 +44,7 @@ const TrackList = () => {
       lastPage.hasMore ? pages.length + 1 : undefined,
   });
 
-  if (status === "loading") {
+  if (status === "pending") {
     return (
       <div className="space-y-6">
         {Array.from({ length: 3 }).map((_, idx) => (
@@ -42,7 +55,13 @@ const TrackList = () => {
       </div>
     );
   }
-  if (error) return "Something went wrong!";
+  if (error) {
+    return (
+      <p role="alert" className="text-red-700 dark:text-red-300">
+        Unable to load music: {error.message}
+      </p>
+    );
+  }
 
   const allTracks = data?.pages?.flatMap((page) => page.posts) || [];
 

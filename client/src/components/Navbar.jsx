@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
 import {
   SignedIn,
@@ -225,7 +224,7 @@ const Navbar = () => {
       </button>
 
       </header>
-      {typeof document !== "undefined" && createPortal(mobileMenu, document.body)}
+      {mobileMenu}
     </>
   );
 };
