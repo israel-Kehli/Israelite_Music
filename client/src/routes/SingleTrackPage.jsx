@@ -31,16 +31,16 @@ const SingleTrackPage = () => {
     queryFn: fetchGenres,
   });
 
-  const pageTitle = data ? `${data.title} | Israelite Music` : "Israelite Music";
+  const pageTitle = data ? `${data.title} | Israel Kehli Music` : "Israel Kehli Music";
   const pageDescription = data?.desc
     ? data.desc
-    : "Israelite Music track and release from the community.";
+    : "Israel Kehli Music track and release from the community.";
   const pageUrl = data
-    ? `https://www.israelitemusic.com/${data.slug}`
-    : "https://www.israelitemusic.com";
+    ? `https://israelitemusic.com.ng.ng/${data.slug}`
+    : "https://israelitemusic.com.ng.ng";
   const pageImage = data?.img
     ? `https://ik.imagekit.io/cu7rwsp4u/${data.img.replace(/^\/+/, "")}`
-    : "https://www.israelitemusic.com/logo.png";
+    : "https://israelitemusic.com.ng.ng/israelkehli_logo.png";
 
   useEffect(() => {
     if (!data) return;

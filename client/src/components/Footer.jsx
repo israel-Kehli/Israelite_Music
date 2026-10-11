@@ -6,13 +6,13 @@ const Footer = () => {
       <div className="grid gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Israelite Music" className="w-9 h-9 rounded-lg" />
+            <img src="/logo.png" alt="Israel Kehli Music" className="w-9 h-9 rounded-lg" />
             <h3 className="font-semibold text-slate-900 dark:text-slate-100">
-              Israelite Music
+              Israel Kehli Music
             </h3>
           </div>
           <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
-            Sharing inspiring music, artists, and stories from the Israelite Music community.
+            Gospel music, worship, original releases, and music production from Israel Kehli.
           </p>
         </div>
         <div>
@@ -32,15 +32,15 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold text-slate-800 dark:text-slate-200">Contact</h4>
           <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
-            israelitemusic.com
+            Israel Kehli · Gospel Music & Production
           </p>
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            baduntobi2020@gmail.com
+            praiseim010@gmail.com
           </p>
         </div>
       </div>
       <p className="mt-8 text-xs text-slate-500 dark:text-slate-500">
-        © {new Date().getFullYear()} Israelite Music. All rights reserved.
+        © {new Date().getFullYear()} Israel Kehli Music. All rights reserved.
       </p>
     </footer>
   );

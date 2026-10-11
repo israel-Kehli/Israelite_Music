@@ -5,4 +5,4 @@ Disallow: /cpanel
 Disallow: /login
 Disallow: /register
 
-Sitemap: https://www.israelitemusic.com/sitemap.xml
+Sitemap: https://israelitemusic.com.ng.ng/sitemap.xml

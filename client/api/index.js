@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const clientDistDir = path.resolve(__dirname, "../dist/client");
 const indexHtmlPath = path.join(clientDistDir, "index.html");
-const siteUrl = "https://israelitemusic.com";
+const siteUrl = "https://israelitemusic.com.ng";
 const apiUrl = process.env.VITE_API_URL || process.env.API_URL;
 
 const MIME_TYPES = {
@@ -92,7 +92,7 @@ const truncate = (value = "", length = 160) => {
 };
 
 const getImageUrl = (img) => {
-  if (!img) return `${siteUrl}/logo.png`;
+  if (!img) return `${siteUrl}/israelkehli_logo.png`;
   if (/^https?:\/\//i.test(img)) return img;
   return `https://ik.imagekit.io/cu7rwsp4u/${String(img).replace(/^\/+/, "")}`;
 };
@@ -114,22 +114,22 @@ const getRouteSeo = async (pathname) => {
 
   if (cleanPath === "/") {
     return {
-      title: "Israelite Music | Music, Artists & New Releases",
+      title: "Israel Kehli | Gospel Music, Music Production & New Releases",
       description:
-        "Israelite Music helps listeners discover inspiring music, artists, albums, lyrics, and new releases.",
+        "Official music website of Israel Kehli, gospel singer, music minister, producer and sound engineer. Discover gospel songs, releases and music production.",
       url: `${siteUrl}/`,
-      image: `${siteUrl}/logo.png`,
+      image: `${siteUrl}/israelkehli_logo.png`,
       type: "website",
     };
   }
 
   if (cleanPath === "/posts") {
     return {
-      title: "Israelite Music | Music Library",
+      title: "Israel Kehli | Gospel Music Library",
       description:
-        "Discover music, artists, albums, lyrics, and new releases from Israelite Music.",
+        "Discover gospel music, songs, new releases and music production from Israel Kehli.",
       url: `${siteUrl}/posts`,
-      image: `${siteUrl}/logo.png`,
+      image: `${siteUrl}/israelkehli_logo.png`,
       type: "website",
     };
   }
@@ -145,7 +145,7 @@ const getRouteSeo = async (pathname) => {
   if (!post?.title) return null;
 
   return {
-    title: `${post.title} | Israelite Music`,
+    title: `${post.title} | Israel Kehli`,
     description: truncate(post.desc || post.content),
     url: `${siteUrl}/${post.slug || slug}`,
     image: getImageUrl(post.img),
