@@ -45,15 +45,32 @@ const Write = () => {
   const mutation = useMutation({
     mutationFn: async (newTrack) => {
       const token = await getToken();
-      return axios.post(`${import.meta.env.VITE_API_URL}/posts`, newTrack, {
-        headers: {
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/posts`,
+        newTrack,
+        {
+          headers: {
           Authorization: `Bearer ${token}`,
-        },
-      });
+          },
+        }
+      );
+      if (typeof response.data?.slug !== "string" || !response.data.slug) {
+        throw new Error("The server did not return a URL for the uploaded track.");
+      }
+
+      return response;
     },
     onSuccess: (res) => {
       toast.success("Track has been uploaded");
       navigate(`/${res.data.slug}`);
+    },
+    onError: (error) => {
+      const responseData = error.response?.data;
+      const message =
+        typeof responseData === "string"
+          ? responseData
+          : responseData?.message || error.message || "Track upload failed.";
+      toast.error(message);
     },
   });
 
@@ -89,8 +106,6 @@ const Write = () => {
       toast.error("Title is required.");
       return;
     }
-
-    console.log(data);
 
     mutation.mutate(data);
   };

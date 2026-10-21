@@ -38,8 +38,7 @@ const Upload = ({ children, type, setProgress, setData }) => {
   };
 
   const onError = (err) => {
-    console.log(err);
-    toast.error("Image upload failed!");
+    toast.error(`Image upload failed: ${err?.message || "Unknown upload error"}`);
   };
   const onSuccess = (res) => {
     console.log(res);
