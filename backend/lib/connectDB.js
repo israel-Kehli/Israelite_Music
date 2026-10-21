@@ -23,7 +23,6 @@ const connectDB = async () => {
     console.log("MongoDB is connected");
   } catch (err) {
     cached.promise = null;
-    console.log(err);
     throw err;
   }
 
