@@ -107,6 +107,11 @@ const Write = () => {
       return;
     }
 
+    if (!data.content.trim()) {
+      toast.error("Track content is required.");
+      return;
+    }
+
     mutation.mutate(data);
   };
 

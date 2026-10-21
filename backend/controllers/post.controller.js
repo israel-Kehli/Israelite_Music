@@ -112,14 +112,19 @@ export const getPostById = async (req, res) => {
 export const createPost = async (req, res) => {
   const clerkUserId = req.auth.userId;
 
-  console.log(req.headers);
-
   if (!clerkUserId) {
     return res.status(401).json("Not authenticated!");
   }
 
   if (!req.body.title || !req.body.title.trim()) {
     return res.status(400).json("Title is required!");
+  }
+
+  if (
+    typeof req.body.content !== "string" ||
+    !req.body.content.trim()
+  ) {
+    return res.status(400).json("Track content is required!");
   }
 
   const user = req.dbUser || (await ensureUser(clerkUserId));
